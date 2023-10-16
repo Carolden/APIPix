@@ -1,6 +1,8 @@
 let bntList = document.getElementById('bnt-list');
 
 bntList.addEventListener('click', async () => {
-  let res = await fetch('http://localhost:3000/batata');
-  console.log(res.json);
+  let response = await fetch(`http://localhost:4000/batata`);
+  let infos = await response.json();
+  console.log(infos)
+  return infos;
 });

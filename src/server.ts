@@ -1,6 +1,6 @@
 import express, { Express, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
-// import usuariosRoutes from "./routes/usuarios";
+import route from "./routes/route";
 // import categoriasRoutes from './routes/categorias';
 // import beneficiariosRoutes from './routes/beneficiarios';
 // import cdsRoutes from './routes/cds';
@@ -18,7 +18,7 @@ server.use((req: Request, res: Response, next: NextFunction) => {
   next();
 });
 
-// server.use(usuariosRoutes);
+server.use(route);
 // server.use(categoriasRoutes);
 // server.use(beneficiariosRoutes);
 // server.use(cdsRoutes);
@@ -29,8 +29,8 @@ server.use((req: Request, res: Response, next: NextFunction) => {
 
 export default {
   start () {
-    server.listen(3001, () => {
-      console.log('Server started on port 3000!');
+    server.listen(4000, () => {
+      console.log('Server started!');
     });
   }
 };
