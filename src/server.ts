@@ -29,7 +29,7 @@ server.use((req: Request, res: Response, next: NextFunction) => {
 
 export default {
   start () {
-    server.listen(3000, () => {
+    server.listen(3001, () => {
       console.log('Server started on port 3000!');
     });
   }
