@@ -1,0 +1,28 @@
+body {
+    background-image: url('img.jpg');
+}
+
+.display {
+    border: 1px solid black;
+    padding: 30px;
+    background-color: white;
+}
+
+.isbn {
+    margin: 30px;
+    background-color: white;
+    padding: 10px;
+}
+
+.h1 {
+    background-color: white
+}
+
+.button {
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
