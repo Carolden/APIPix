@@ -9,7 +9,7 @@ router.get('/list', pixcontroller.list);
 
 router.post('/sendpix/:senderid/:recipientid/:value', pixcontroller.sendPix);
 
-// router.post('/pix', validarPayload, validarSeEmailExiste, pixcontroller.create);
+router.get('/listpix', pixcontroller.pix);
 
 // router.get('/pix/{userId}/{type}', validarSeExiste, validarPayload, validarSeEmailExiste, pixcontroller.update);
 

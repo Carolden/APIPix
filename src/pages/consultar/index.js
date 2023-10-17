@@ -6,4 +6,3 @@ let infos = await response.json();
 console.log(infos)
 return infos;
 });
-
