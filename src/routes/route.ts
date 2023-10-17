@@ -5,12 +5,12 @@ let router: Router = Router();
 
 let pixcontroller: PixController = new PixController();
 
-router.get('/batata', pixcontroller.list);
+router.get('/list', pixcontroller.list);
 
-// router.get('/pix', validarSeExiste, usuariosController.find);
+router.post('/sendpix/:senderid/:recipientid/:value', pixcontroller.sendPix);
 
-// router.post('/pix', validarPayload, validarSeEmailExiste, usuariosController.create);
+// router.post('/pix', validarPayload, validarSeEmailExiste, pixcontroller.create);
 
-// router.get('/pix/{userId}/{type}', validarSeExiste, validarPayload, validarSeEmailExiste, usuariosController.update);
+// router.get('/pix/{userId}/{type}', validarSeExiste, validarPayload, validarSeEmailExiste, pixcontroller.update);
 
 export default router;
