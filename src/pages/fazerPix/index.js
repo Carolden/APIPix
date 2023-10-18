@@ -1,13 +1,25 @@
 let remetenteID = document.getElementById('remetenteID');
 let destinatarioID = document.getElementById('destinatarioID');
 let valor = document.getElementById('valor');
-let button = document.getElementById('button');
+let enviar = document.getElementById('enviar');
 
 
-button.addEventListener('click', async () => {
+if (enviar) {
+enviar.addEventListener('click', async () => {
 
-  let response = await fetch(`http://localhost:4000/sendpix/:senderid/:recipientid/:value'`);
-  let infos = await response.json();
-  console.log(infos)
-  return infos;
-  });
+    const requestBody = {
+      senderId: remetenteID.value,
+      recipientId: destinatarioID.value,
+      value: valor.value
+    }
+
+    const response = await fetch('http://177.44.248.24/pix-api/pix', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(requestBody)
+    });
+
+    const data = await response.json();
+  })};
