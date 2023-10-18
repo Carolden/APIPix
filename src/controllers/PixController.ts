@@ -32,28 +32,10 @@ export class PixController {
 
   };
 
-
-    // async search(userId: number, type: string) {
-    //   const url = `http://177.44.248.24/pix-api/pix/${userId}/${type}`;
-
-    //   try {
-    //     const response = await fetch(url);
-    //     const data = await response.json();
-    //     return data;
-    //   } catch (error) {
-    //     console.error('Erro ao obter dados PIX:', error);
-    //   }
-    // }
-
     async search (req: Request, res: Response): Promise<any> {
-      // const requestBody = req.body;
 
-      // let userid = Number(req.params.id);
-      // let type = (req.params.type);
-
-      let userid = 1;
-      let type = 'sent';
-
+      let userid = Number(req.params.userid);
+      let type = (req.params.type);
 
       const response = await fetch(`http://177.44.248.24/pix-api/pix/${userid}/${type}`, {
 
@@ -62,7 +44,6 @@ export class PixController {
         headers: {
         'Content-Type': 'application/json'
       },
-      // body: JSON.stringify(requestBody)
     });
 
     const data = await response.json();
