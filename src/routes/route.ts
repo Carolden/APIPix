@@ -11,6 +11,6 @@ router.get('/listpix', pixcontroller.pix);
 
 router.post('/sendpix', pixcontroller.sendPix);
 
-router.get('/pix/:userid/:type', pixcontroller.search);
+// router.get('/pix/:userid/:type', pixcontroller.search);
 
 export default router;
