@@ -16,14 +16,8 @@ export class PixController {
       return res.status(200).json(data);
     }
 
-    async sendPix (senderId: number, recipientId: number, value: number): Promise<any> {
-      let response = await fetch(`http://177.44.248.24/pix-api/pix/${senderId}/${recipientId}/${value}`);
-      let body = req.body;
-
-      
-
-
-
+    async sendPix (req: Request, res: Response): Promise<any> {
+      let response = await fetch(`http://177.44.248.24/pix-api/pix/`);
       let data = await response.json();
         return res.status(200).json(data);
       }

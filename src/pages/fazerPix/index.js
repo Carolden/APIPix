@@ -13,8 +13,8 @@ enviar.addEventListener('click', async () => {
       value: valor.value
     }
 
-    // const response = await fetch('http://177.44.248.24/pix-api/pix', {
-    const response = await fetch(`http://localhost:4000/sendpix/${senderId}/${recipientId}/${value}`, {
+    const response = await fetch('http://177.44.248.24/pix-api/pix', {
+    // const response = await fetch(`http://localhost:4000/sendpix`, {
 
       method: 'POST',
       headers: {

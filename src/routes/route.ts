@@ -9,7 +9,7 @@ router.get('/list', pixcontroller.list);
 
 router.get('/listpix', pixcontroller.pix);
 
-router.post('/sendpix/:senderId/:recipientId/:value', pixcontroller.sendPix);
+router.post('/sendpix', pixcontroller.sendPix);
 
 // router.get('/pix/:userid/:type', pixcontroller.search);
 
