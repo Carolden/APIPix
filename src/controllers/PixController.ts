@@ -45,6 +45,31 @@ export class PixController {
     //   }
     // }
 
+    async search (req: Request, res: Response): Promise<any> {
+      // const requestBody = req.body;
+
+      // let userid = Number(req.params.id);
+      // let type = (req.params.type);
+
+      let userid = 1;
+      let type = 'sent';
+
+
+      const response = await fetch(`http://177.44.248.24/pix-api/pix/${userid}/${type}`, {
+
+
+        method: 'GET',
+        headers: {
+        'Content-Type': 'application/json'
+      },
+      // body: JSON.stringify(requestBody)
+    });
+
+    const data = await response.json();
+    return res.status(200).json(data);
+
+  };
+
 
 }
 
