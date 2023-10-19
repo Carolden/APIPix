@@ -1,4 +1,6 @@
 import { Request, Response } from 'express';
+import fetch from 'node-fetch' //REMOVER EM CASO DE ERRO
+
 export class PixController {
 
   async list (req: Request, res: Response): Promise<any> {

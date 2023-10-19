@@ -1,28 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
-    background-image: url('img.jpg');
-}
-
-.display {
-    border: 1px solid black;
-    padding: 30px;
-    background-color: white;
-}
-
-.isbn {
-    margin: 30px;
-    background-color: white;
-    padding: 10px;
-}
-
-.h1 {
-    background-color: white
+  font-family: 'Roboto', sans-serif;
 }
 
 .button {
-    border: none;
-    padding: 10px;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 5px;
+    padding: 20px;
+}
+
+.button-conatiner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+h1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 80px;
 }
 

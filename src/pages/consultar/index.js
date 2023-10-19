@@ -21,7 +21,7 @@ for (let info of infos) {
   let tdName = document.createElement('td');
   let tdCreatedAt = document.createElement('td');
   let tdUpdatedAt = document.createElement('td');
-
+  
   tdId.innerText = info.id;
   tdName.innerText = info.name;
   tdCreatedAt.innerText = info.createdAt;
@@ -61,35 +61,40 @@ bntList.addEventListener('click', async () => {
   for (let info of infos) {
     let tr = document.createElement('tr');
     let tdId = document.createElement('td');
-    let tdValue = document.createElement('td');
+    let tdName = document.createElement('td');
     let tdCreatedAt = document.createElement('td');
     let tdUpdatedAt = document.createElement('td');
+    let tdValue = document.createElement('td');
     let tdIdRecebedor = document.createElement('td');
     let tdNomeRecebedor = document.createElement('td');
     let tdIdEnvio = document.createElement('td');
     let tdNomeEnvio = document.createElement('td');
+    
+
 
 
     tdId.innerText = info.id;
-    // tdValue.innerText = info.value;
-    // tdName.innerText = info.name;
+    tdName.innerText = info.name;
     tdCreatedAt.innerText = info.createdAt;
     tdUpdatedAt.innerText = info.updatedAt;
-    // tdIdRecebedor.innerText = info.recipient.id;
-    // tdNomeRecebedor.innerText = info.recipient.name;
-    // tdIdEnvio.innerText = info.sender.id;
-    // tdNomeEnvio.innerText = info.sender.name;
+    tdValue.innerText = info.value;
+    tdIdRecebedor.innerText = info.recipient.id;
+    tdNomeRecebedor.innerText = info.recipient.name;
+    tdIdEnvio.innerText = info.sender.id;
+    tdNomeEnvio.innerText = info.sender.name;
+
 
 
     tr.appendChild(tdId);
-    // tr.appendChild(tdValue);
-    // tr.appendChild(tdName);
+    tr.appendChild(tdName);
     tr.appendChild(tdCreatedAt);
     tr.appendChild(tdUpdatedAt);
-    // tr.appendChild(tdIdRecebedor);
-    // tr.appendChild(tdNomeRecebedor);
-    // tr.appendChild(tdIdEnvio);
-    // tr.appendChild(tdNomeEnvio);
+    tr.appendChild(tdValue);
+    tr.appendChild(tdIdRecebedor);
+    tr.appendChild(tdNomeRecebedor);
+    tr.appendChild(tdIdEnvio);
+    tr.appendChild(tdNomeEnvio);
+
 
 
     corpoTabela.appendChild(tr);

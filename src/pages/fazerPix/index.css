@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Estilizando a tabela */
 table {
   border-collapse: collapse;
@@ -27,4 +33,21 @@ td:first-child, th:first-child {
 td:nth-child(3), td:nth-child(4) {
   font-family: Arial, sans-serif;
   font-size: 14px;
+}
+
+#bnt-voltar {
+  margin-left: 20px;
+
+}
+
+.container-input {
+  margin: 20px;
+}
+
+.label-container {
+  margin: 20px;
+}
+
+.button-container {
+  margin-left: 80px;
 }

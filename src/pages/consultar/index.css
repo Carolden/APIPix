@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Estilizando a tabela */
 table {
   border-collapse: collapse;
@@ -39,4 +45,9 @@ td:nth-child(3), td:nth-child(4) {
 
 #bnt-list {
   margin-left: 20px
+}
+
+#bnt-voltar {
+  margin-left: 20px;
+
 }
