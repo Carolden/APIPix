@@ -28,3 +28,15 @@ td:nth-child(3), td:nth-child(4) {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
+
+.div-botoes {
+  margin: 10px;
+}
+
+#bnt-listUsers {
+  margin-left: 20px;
+}
+
+#bnt-list {
+  margin-left: 20px
+}
