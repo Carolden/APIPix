@@ -23,32 +23,25 @@
                 <input class="form-check-input enviado" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                 <label class="form-check-label" for="inlineRadio2">Enviados</label>
                 <button type="button" class="btn btn-primary" id="bnt-list">Listar</button>
+                <button type="button" class="btn btn-primary" id="bnt-listUsers">Listar Usuários</button>
+
             </div>
 
         </div>
     </header>
 
-    <div>
-        <div class="container text-center">
-            <div class="row">
-              <div class="col">
-                ID
-              </div>
-              <div class="col">
-                Remetente
-              </div>
-              <div class="col">
-                Destinatário
-              </div>
-              <div class="col">
-                Data
-              </div>
-              <div class="col">
-                Valor
-              </div>
-            </div>
-          </div>
-    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Criado em</th>
+          <th>Atualizado em</th>
+        </tr>
+      </thead>
+      <tbody id="corpo-tabela">
+      </tbody>
+    </table>
 
     <script src="index.js"></script>
 </body>
