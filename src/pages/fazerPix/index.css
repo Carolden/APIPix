@@ -1,0 +1,30 @@
+/* Estilizando a tabela */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* Estilizando as células do cabeçalho */
+th {
+  background-color: #f2f2f2;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+td:first-child, th:first-child {
+  text-align: center;
+}
+
+td:nth-child(3), td:nth-child(4) {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
